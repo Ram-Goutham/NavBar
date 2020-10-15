@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar--container">
+                <div id="navbar--container--logo">
+                    <img src="RG_logo.png" alt="RG">
+                </div>
+                <div class="navbar--container--menu">
+                    <div class="navbar--container--menu--links">
+                        <a href="#">HOME</a>
+                    </div>
+                    <div class="navbar--container--menu--links">
+                        <a href="">CATEGORIES</a>
+                    </div>
+                    <div class="navbar--container--menu--links">
+                        <a href="">CONTACT</a>
+                    </div>
+                    <div class="navbar--container--menu--links">
+                        <a href="">LOCATION</a>
+                    </div>
+                </div>
+                <div class="navbar--container--toggle--menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <footer>
+
+    </footer>
+    <script>
+        let tglBtn = document.querySelector(".navbar--container--toggle--menu")
+        let menu = document.querySelector(".navbar--container--menu")
+
+        tglBtn.addEventListener("click",() => {
+            menu.classList.toggle("active")
+            tglBtn.classList.toggle("active")
+        })
+
+
+    </script>
+</body>
+</html>
